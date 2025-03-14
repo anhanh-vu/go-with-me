@@ -41,8 +41,33 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+/* Hiệu ứng chạy vòng quanh */
+@keyframes moveAround {
+    0% {
+        transform: rotate(0deg) translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg) translateX(100px) rotate(-90deg);
+    }
+    50% {
+        transform: rotate(180deg) translateX(0) rotate(-180deg);
+    }
+    75% {
+        transform: rotate(270deg) translateX(-100px) rotate(-270deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(0) rotate(-360deg);
+    }
+}
+
+/* Áp dụng hiệu ứng cho nút No khi người dùng nhấn */
+.no-button.moving {
+    animation: moveAround 3s infinite;
+}
 .gif_container img {
     max-width: 100%;
     height: auto;
