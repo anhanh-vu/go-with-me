@@ -42,12 +42,14 @@ let messageIndex = 0;
 // Khi nhấn nút "No"
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
-    const yesButton = document.querySelector('.yes-button');
-    noButton.textContent = messages[messageIndex];
-    messageIndex = (messageIndex + 1) % messages.length;
-    const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    
+    // Bắt đầu hiệu ứng chuyển động vòng quanh
+    noButton.classList.add('moving');
+    
+    // Bạn có thể thêm logic khác nếu muốn thêm sự kiện sau khi hiệu ứng hoàn tất
+    // Ví dụ: thay đổi nội dung của nút "No" sau một khoảng thời gian
 }
+
 
 // Khi nhấn nút "Yes"
 function handleYesClick() {
