@@ -44,10 +44,29 @@ body {
 
 /* CSS cho ảnh IMG_2735 */
 .image-container img {
-    width: 100%;  /* Đảm bảo ảnh chiếm 100% chiều rộng của container */
+    width: 500%;  /* Đảm bảo ảnh chiếm 100% chiều rộng của container */
     max-width: 500px; /* Giới hạn chiều rộng tối đa */
     height: auto; /* Đảm bảo tỷ lệ ảnh không bị thay đổi */
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng cho ảnh */
+}
+
+.zalo-container {
+    margin-top: 30px;
+}
+
+.zalo-button {
+    background-color: #07a6d1; /* Màu Zalo */
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.zalo-button:hover {
+    background-color: #007e96; /* Đổi màu khi hover */
 }
