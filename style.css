@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Điều chỉnh ảnh sau khi nhấn Yes */
+#image-container {
+    display: none; /* Ảnh bị ẩn ban đầu */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white; /* Nền trắng cho ảnh */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+    width: 100%;
+    max-width: 600px; /* Giới hạn kích thước ảnh */
+    overflow: hidden;
+}
+
+#image-container img {
+    width: 100%; /* Đảm bảo ảnh không vượt quá kích thước container */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng cho ảnh */
+}
