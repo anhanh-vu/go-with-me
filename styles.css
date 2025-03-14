@@ -68,6 +68,8 @@ h1 {
 .no-button.moving {
     animation: moveAround 3s infinite;
 }
+
+/* Các ảnh GIF */
 .gif_container img {
     max-width: 100%;
     height: auto;
