@@ -46,10 +46,15 @@ function handleNoClick() {
     // Bắt đầu hiệu ứng chuyển động vòng quanh
     noButton.classList.add('moving');
     
-    // Bạn có thể thêm logic khác nếu muốn thêm sự kiện sau khi hiệu ứng hoàn tất
-    // Ví dụ: thay đổi nội dung của nút "No" sau một khoảng thời gian
-}
+    // Thay đổi nội dung của nút "No" sau mỗi lần nhấn
+    noButton.textContent = messages[messageIndex];
+    messageIndex = (messageIndex + 1) % messages.length;
 
+    // Sau khi hiệu ứng vòng quanh hoàn tất, có thể loại bỏ lớp 'moving' để dừng chuyển động
+    setTimeout(() => {
+        noButton.classList.remove('moving');
+    }, 3000);  // Thời gian hiệu ứng vòng quanh (3s)
+}
 
 // Khi nhấn nút "Yes"
 function handleYesClick() {
